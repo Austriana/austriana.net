@@ -1,0 +1,60 @@
+html{
+    background-color: rgb(10, 10, 10);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 1000px;
+    width: 100%;               
+    min-width: 250px;             
+    background-color: rgb(243, 237, 237);
+    padding: 0;
+    margin: 0 auto;
+    /* border: solid red; */
+}
+header{
+    position: sticky;
+    top: 0;
+    max-width: 1000px;
+    width: 100%;
+    height: 200px;
+    min-height: fit-content;
+    backdrop-filter: blur(100px);
+}
+#logo{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 200px;
+    padding: 10px;
+    align-items: center;
+}
+#hamburger{
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    top: 50%;
+    right: 40px;
+    background-color: black;
+}
+#hamburger::before, #hamburger::after {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    content: "";
+    box-sizing: inherit;
+}
+#hamburger::before{
+    top: -10px;
+}
+#hamburger::after{
+    top: 10px;            
+}
+footer{
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+    background-color: rgb(243, 237, 237);
+}
