@@ -13,7 +13,7 @@ html {
 body {
     max-width: 1000px;
     width: 100%;               
-    min-width: 250px;             
+    min-width: 300px;             
     background-color: rgb(243, 237, 237);
     padding: 0;
     margin: 0 auto;
@@ -34,18 +34,40 @@ header {
 #logo {
     position: absolute;
     top: 50%;
-    transform: translate(0, -50%);
-    width: 200px;
-    padding: 20px;
+    transform: translate(10%, -50%);
+    max-width: 250px;
+    width: 100%;
+    min-width: 100px;
+    margin-top: 20px;
+    padding: 10px;
     align-items: center;
 }
-
+#navContainer{
+    position: absolute;
+    width: 1000px;
+    height: calc(100% - 260px);
+    text-align: center;
+    border: solid red 1px;
+    background-color: bisque;
+    /* display: flex; */
+    justify-content: space-around;
+    align-content: center;
+    font-size: 25px;
+    z-index: 100;
+}
+#navContainer ul, li{
+    list-style: none;
+    margin: calc(
+        100% / 6
+    );
+}
 #hamburger {
     position: absolute;
     width: 30px;
     height: 3px;
-    top: 50%;
-    right: 40px;
+    top: 60%;
+    transform: translate(0,-50%);
+    right: 10%;
     background-color: black;
 }
 
