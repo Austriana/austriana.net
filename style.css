@@ -45,7 +45,8 @@ header {
 }
 #navContainer{
     position: fixed;
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
     height: calc(100% - 255px);
     text-align: center;
     display: none;
