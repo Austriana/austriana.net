@@ -3,6 +3,7 @@ html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-padding-top: 215px;
 }
 
 *, *::before, *::after {
@@ -72,6 +73,7 @@ header {
     right: 10%;
     transform: translate(0,-50%);
     padding: 20px;
+    cursor: pointer;
 }
 #hamburger {
     position: absolute;
@@ -80,7 +82,6 @@ header {
     background-color: black;
     transform: translate(-50%,-50%);
 }
-
 #hamburger::before, #hamburger::after {
     position: absolute;
     width: 30px;
@@ -96,7 +97,13 @@ header {
 #hamburger::after {
     top: 10px;            
 }
-
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #333333;
+}
 main {
     display: flex;
     flex-direction: column;
