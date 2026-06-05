@@ -97,6 +97,19 @@ header {
 #hamburger::after {
     top: 10px;            
 }
+#hamburger.active{
+    width: 0;
+}
+#hamburger.active::before{
+    rotate: 45deg;
+    top: 11px;
+    transform: translateX(-50%);
+}
+#hamburger.active::after{
+    rotate: -45deg;
+    top: -11px;
+    transform: translateX(-50%);
+}
 a{
     text-decoration: none;
     color: black;
