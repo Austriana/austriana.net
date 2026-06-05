@@ -104,11 +104,13 @@ header {
     rotate: 45deg;
     top: 11px;
     transform: translateX(-50%);
+    transition: all .5s ease;
 }
 #hamburger.active::after{
     rotate: -45deg;
     top: -11px;
     transform: translateX(-50%);
+    transition: all .5s ease;
 }
 a{
     text-decoration: none;
