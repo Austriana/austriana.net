@@ -80,37 +80,38 @@ header {
     width: 30px;
     height: 3px;
     background-color: black;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
+
 #hamburger::before, #hamburger::after {
     position: absolute;
     width: 30px;
     height: 3px;
     background-color: black;
     content: "";
+    transition: transform 0.3s ease, top 0.3s ease;
+    transform-origin: center;
 }
 
-#hamburger::before {
-    top: -10px;
+#hamburger::before { 
+    top: -10px; 
+}
+#hamburger::after { 
+    top: 10px; 
 }
 
-#hamburger::after {
-    top: 10px;            
+#hamburger.active {
+    background-color: transparent;
 }
-#hamburger.active{
-    width: 0;
+
+#hamburger.active::before {
+    top: 0;
+    transform: rotate(45deg);
 }
-#hamburger.active::before{
-    rotate: 45deg;
-    top: 11px;
-    transform: translateX(-50%);
-    transition: all .5s ease;
-}
-#hamburger.active::after{
-    rotate: -45deg;
-    top: -11px;
-    transform: translateX(-50%);
-    transition: all .5s ease;
+
+#hamburger.active::after {
+    top: 0;
+    transform: rotate(-45deg);
 }
 a{
     text-decoration: none;
