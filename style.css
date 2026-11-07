@@ -14,8 +14,8 @@ html {
 
 body {
     max-width: 1050px;
-    width: 100%;               
-    min-width: 450px;             
+    width: 100%;
+    min-width: 362px;           
     background-color: rgb(243, 237, 237);
     padding: 0;
     margin: 0 auto;
@@ -170,4 +170,9 @@ footer {
     padding: 20px 0;
     z-index: 100;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+#Terminübersicht{
+    padding: 0;
+    padding-top: 30px;
+    margin: 0;
 }
