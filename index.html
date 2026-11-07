@@ -2,19 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-<!-- Wir starten standardmäßig auf der 450px-Basis (perfekt fürs Handy) -->
-<meta id="viewport" name="viewport" content="width=450, initial-scale=1.0">
-
-<script>
-  (function() {
-    // Wenn es ein Desktop oder Tablet ist (Bildschirm breiter als 450px):
-    if (window.screen.width > 450) {
-      var mvp = document.getElementById('viewport');
-      // Schalte sofort auf den normalen Desktop-Modus um
-      mvp.setAttribute('content', 'width=device-width, initial-scale=1.0');
-    }
-  })();
-</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/svg+xml" href="src/Group 14 (5).svg">
     <script type="module" src="script.js"></script>
